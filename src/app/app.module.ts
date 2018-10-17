@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TapListComponent } from './tap-list/tap-list.component';
+import { EditTapComponent } from './edit-tap/edit-tap.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TapListComponent
+    TapListComponent,
+    EditTapComponent
   ],
   imports: [
     BrowserModule

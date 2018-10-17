@@ -1,3 +1,4 @@
 export class Tap {
-  constructor(public name: string, public brand: string, public price: number, public abv: number, public fullness: number) {}
+public fullness: number = 124;
+  constructor(public name: string, public brand: string, public price: number, public abv: number) {}
 }
