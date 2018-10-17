@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { TapListComponent } from './tap-list/tap-list.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TapListComponent
   ],
   imports: [
     BrowserModule
