@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Tap } from '../models/tap.model';
 
 @Component({
@@ -8,4 +8,9 @@ import { Tap } from '../models/tap.model';
 })
 export class TapListComponent {
   @Input() childTapList: Tap[];
+  @Output() clickSender = new EventEmitter();
+
+  editButtonClicked(tapToEdit: Tap) {
+    this.clickSender.emit(tapToEdit);
+  }
 }
