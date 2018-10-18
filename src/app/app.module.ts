@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FullnessPipe } from './fullness.pipe';
 
 
 import { AppComponent } from './app.component';
@@ -15,7 +16,8 @@ import { AddTapComponent } from './add-tap/add-tap.component';
     TapListComponent,
     EditTapComponent,
     SellTapComponent,
-    AddTapComponent
+    AddTapComponent,
+    FullnessPipe
   ],
   imports: [
     BrowserModule,

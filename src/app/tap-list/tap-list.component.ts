@@ -11,6 +11,8 @@ export class TapListComponent {
   @Output() clickSender = new EventEmitter();
   @Output() clickParentSell = new EventEmitter();
 
+  filterByFullness: string = 'allTaps';
+
   editButtonClicked(tapToEdit: Tap) {
     this.clickSender.emit(tapToEdit);
   }
@@ -18,4 +20,10 @@ export class TapListComponent {
   parentSellTap(tapToSell) {
     this.clickParentSell.emit(tapToSell)
   }
+
+  onChange(optionFromMenu) {
+    console.log(optionFromMenu)
+  this.filterByFullness = optionFromMenu;
+}
+
 }

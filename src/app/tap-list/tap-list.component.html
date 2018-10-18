@@ -1,5 +1,11 @@
+<select (change)="onChange($event.target.value)">
+  <option value="allTaps" selected="selected">All Taps</option>
+  <option value="lowTaps">Low Taps</option>
+  <option value="justTapped">Just Tapped</option>
+</select>
+
 <ul>
-  <li class="taps" *ngFor="let currentTap of childTapList">
+  <li class="taps" *ngFor="let currentTap of childTapList | tapLevel:filterByFullness">
     <ul class="tap-info">
       <li>Name: {{currentTap.name}}</li>
       <li>Brand: {{currentTap.brand}}</li>
