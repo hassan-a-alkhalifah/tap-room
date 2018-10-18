@@ -28,4 +28,8 @@ export class AppComponent {
     tapToSubtract.fullness --;
   }
 
+  addTap(newTap: Tap) {
+    this.masterTapList.push(newTap);
+  }
+
 }
