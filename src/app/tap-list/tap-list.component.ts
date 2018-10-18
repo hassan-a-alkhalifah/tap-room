@@ -9,8 +9,13 @@ import { Tap } from '../models/tap.model';
 export class TapListComponent {
   @Input() childTapList: Tap[];
   @Output() clickSender = new EventEmitter();
+  @Output() clickParentSell = new EventEmitter();
 
   editButtonClicked(tapToEdit: Tap) {
     this.clickSender.emit(tapToEdit);
+  }
+
+  parentSellTap(tapToSell) {
+    this.clickParentSell.emit(tapToSell)
   }
 }

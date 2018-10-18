@@ -8,5 +8,6 @@
       <li>Keg Life: {{currentTap.fullness}}</li>
     </ul>
     <button (click)="editButtonClicked(currentTap)">Edit</button>
+    <app-sell-tap [childSelectedTap]="currentTap" (clickedSell)="parentSellTap($event)"></app-sell-tap>
   </li>
 </ul>

@@ -19,11 +19,13 @@ export class AppComponent {
   editTap(clickedTap) {
     this.selectedTap = clickedTap;
   }
-  //editTap is the last thing we wrote. Start here today
-  //Need to add conditional statement to check if selectedTap is null or not
-  //Add HTML edit button for each tap
+
   finishedEditing() {
     this.selectedTap = null;
+  }
+
+  subtractOne(tapToSubtract) {
+    tapToSubtract.fullness --;
   }
 
 }
